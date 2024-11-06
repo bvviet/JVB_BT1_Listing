@@ -1,0 +1,157 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991px) {
+    .banner {
+        width: auto;
+    }
+
+    .logo-mobile {
+        display: block;
+        width: 217px;
+    }
+
+    .logo-mobile__drawer img {
+        width: 80%;
+    }
+
+    .logo-pc {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .navbar ul a {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .content-header {
+        padding-top: 24px;
+        padding-bottom: 21px;
+    }
+
+    .main-content {
+        margin-top: 52px;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        padding: 14px 0;
+        color: #333;
+        font-weight: 500;
+    }
+
+    /* Banner */
+    .heading {
+        font-size: 36px;
+        line-height: 42.96px;
+        margin-top: 32px;
+        font-weight: 700;
+        padding: 0 20px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-top: 24px;
+        line-height: 27.2px;
+        padding: 0 20px;
+    }
+
+    .banner-img {
+        width: 100vw;
+        height: 235px;
+        object-fit: cover;
+    }
+
+    .hr {
+        width: 100vw;
+    }
+
+    /* Articles */
+    .articles {
+        margin-top: 56px;
+        width: 100%;
+    }
+
+    .articles-lists {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 42px;
+    }
+
+    .articles-image {
+        height: 194px;
+    }
+
+    /* Menu */
+    .toggle-menu svg {
+        width: 25px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 25% 0 0;
+        background-color: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+        padding: 50px;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .footer-banner__bold,
+    .footer-banner__bland {
+        font-size: 16px;
+    }
+
+    .footer-content__desc{
+      width: 75%;
+    }
+}
